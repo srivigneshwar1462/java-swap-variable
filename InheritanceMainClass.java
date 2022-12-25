@@ -1,20 +1,8 @@
 import java.util.*;  
 
 
-interface swap {
-   void swap();
-}
-
-
-class Interface implements swap
-{  
-    public static void main(String a[])   
-    {   
-        Interface obj = new Interface(); 
-        obj.swap();
-    }   
-
-    public void swap(){
+class Swap {
+    Swap(){
         System.out.println("Enter the value of x and y");  
         Scanner sc = new Scanner(System.in);  
         int x =  sc.nextInt() ;  
@@ -24,4 +12,19 @@ class Interface implements swap
         x = x - y;   
         System.out.println("After swapping:\nx ==> "+x +"\ny ==> " + y);   
     }
+}
+
+
+class Inheritance extends Swap
+{  
+   
 }  
+
+
+class InheritanceMainClass {
+
+     public static void main(String a[])   
+    {   
+        Inheritance obj = new Inheritance(); 
+    }   
+}

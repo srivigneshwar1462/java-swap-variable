@@ -4,11 +4,7 @@ class Final
     public final int a = 1;
     public final int b = 2;
 
-    public static void main(String a[])   
-    {   
-        Final obj = new Final();
-        obj.swap();
-    }   
+   
 
 
      public void swap(){
@@ -21,3 +17,11 @@ class Final
         System.out.println("After swapping:\nx ==> "+x +"\ny ==> " + y);   
     }
 }  
+
+class FinalMainClass{
+ public static void main(String a[])   
+    {   
+        Final obj = new Final();
+        obj.swap();
+    }   
+}

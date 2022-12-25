@@ -36,3 +36,22 @@ class ExceptionClass{
         System.out.println("After swapping:\nx ==> "+x +"\ny ==> " + y);   
     }
 }
+
+
+class ExceptionMainClass {
+    public static void main(String a[])   
+    {   
+        ExceptionClass obj = new ExceptionClass();
+        boolean isException = true;
+        while(isException){
+            try{
+                isException = false;
+                obj.getInputs();
+            }catch(Exception e){
+                isException = true;
+            }
+        }
+        obj.swap();
+        
+    }  
+}
